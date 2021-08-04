@@ -64,3 +64,4 @@ dist/*
 !.htaccess
 !.eslintrc
 .now
+.vercel
