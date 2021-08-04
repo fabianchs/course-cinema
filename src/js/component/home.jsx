@@ -1,26 +1,96 @@
 import React from "react";
-
+import { useState } from "react";
+import { Input, Button } from "reactstrap";
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
+	const [search_status, setSearchStatus] = useState("");
+	const [search_code, setSearchCode] = useState("");
+	const [render_video, setRenderVideo] = useState("");
+
+	const directions = {
+		"1001": [
+			"NomadLand",
+			"https://drive.google.com/file/d/1bGA8-JQEfHy1b3rH07lD7KO3R0b4ccxC/preview"
+		]
+	};
+
+	function doSearch() {
+		let num = 1001;
+		console.log(directions[search_code]);
+		console.log(search_code);
+
+		if (
+			directions[search_code] === undefined ||
+			directions[search_code] === null
+		) {
+			setSearchStatus(
+				<small className="text-danger">
+					Wow! Parece que no se encuentra ese código
+				</small>
+			);
+			setRenderVideo("");
+		} else {
+			setSearchStatus(
+				<small className="text-success">
+					Has encontrado {directions[search_code][0]}!
+				</small>
+			);
+			setRenderVideo(
+				<iframe
+					src={directions[search_code][1]}
+					className="embed-responsive-item"
+					allow="autoplay"
+					allowFullScreen
+				/>
+			);
+		}
+	}
+
 	return (
-		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="mt-5">
+			<div className="row container-fluid m-0 p-0">
+				<h1 className="text-light col-12 d-flex justify-content-center">
+					¡Apreciación de cine!
+				</h1>
+				<h6 className="text-light col-12 d-flex justify-content-center">
+					Inserte el código de la película:
+				</h6>
+			</div>
+			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
+				<div className="col-xl-3 col-lg-4 col-md-5 col-sm-8 m-2">
+					<div className="row m-0 p-0">
+						<Input
+							className="col-9"
+							type="text"
+							name="text"
+							id="search"
+							placeholder="Inserte el código"
+							onChange={() => {
+								setSearchCode(event.target.value);
+							}}></Input>
+						<Button
+							className="col-3"
+							color="secondary"
+							onClick={() => {
+								doSearch();
+							}}>
+							Buscar
+						</Button>
+						<div className="col-12">{search_status}</div>
+					</div>
+				</div>
+			</div>
+			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
+				<div className="embed-responsive embed-responsive-16by9">
+					{render_video}
+				</div>
+			</div>
 		</div>
 	);
 };
 
 export default Home;
+
