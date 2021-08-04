@@ -12,8 +12,32 @@ const Home = () => {
 
 	const directions = {
 		"1001": [
-			"NomadLand",
-			"https://drive.google.com/file/d/1bGA8-JQEfHy1b3rH07lD7KO3R0b4ccxC/preview"
+			"1917",
+			"https://drive.google.com/file/d/1CQmyTfBOfPtwgf_0cmVgfgMuHnVMDwMK/preview"
+		],
+		"1010": [
+			"37 segundos",
+			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/preview"
+		],
+		"1013": [
+			"El insulto",
+			"https://drive.google.com/file/d/1HOzirgFDbU3OphPGyC3yhE1zCHorjqeM/preview"
+		],
+		"1017": [
+			"El padre",
+			"https://drive.google.com/file/d/1hfzMRzwMFaskRVnd_ku7GTxwBJf_GPPQ/preview"
+		],
+		"1027": [
+			"El sonido del metal",
+			"https://drive.google.com/file/d/1x3_pvwAEaUNmG8AfVjuYqUJpO9hJexTM/preview"
+		],
+		"1030": [
+			"Habana Blues",
+			"https://drive.google.com/file/d/1_CvT_Wevpp5XinN8Mo39BLcqqp19bNLe/preview"
+		],
+		"1035": [
+			"Hidden Figures",
+			"https://drive.google.com/file/d/1tqDI2HGMhrgiNXxkQCyk510X8-VeUow3/preview"
 		]
 	};
 
@@ -84,7 +108,7 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
-				<div className="embed-responsive embed-responsive-16by9">
+				<div className="embed-responsive embed-responsive-16by9 col-11">
 					{render_video}
 				</div>
 			</div>
