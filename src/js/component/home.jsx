@@ -38,6 +38,38 @@ const Home = () => {
 		"1035": [
 			"Hidden Figures",
 			"https://drive.google.com/file/d/1tqDI2HGMhrgiNXxkQCyk510X8-VeUow3/preview"
+		],
+		"1039": [
+			"La La Land",
+			"https://drive.google.com/file/d/1G5pQuM6Obk3kAZegoxd1qIpJcSotNvFs/preview"
+		],
+		"1040": [
+			"Mulán",
+			"https://drive.google.com/file/d/1l_BObOM6IRPg39tEyXqx0yc5cPzEBCPc/preview"
+		],
+		"1042": [
+			"NomadLand",
+			"https://drive.google.com/file/d/1bGA8-JQEfHy1b3rH07lD7KO3R0b4ccxC/preview"
+		],
+		"1048": [
+			"Parásitos",
+			"https://drive.google.com/file/d/1oql5ThATONrhfMyEPblfjN9eyEG41oV4/preview"
+		],
+		"1049": [
+			"Pequeños Detalles",
+			"https://drive.google.com/file/d/1YDjqvHxEmoBg-QGuB3YDNfi6wsfNLE9C/preview"
+		],
+		"1051": [
+			"Relatos salvajes",
+			"https://drive.google.com/file/d/1Y3hYrzPcn-HfVtOBulQiLLU60B0Gsmox/preview"
+		],
+		"1055": [
+			"Soul",
+			"https://drive.google.com/file/d/1jl1uHhWS79kvUh12HewBEHqfo-r0hj9h/preview"
+		],
+		"1062": [
+			"Your Name",
+			"https://drive.google.com/file/d/1cDWTOJ3sTYnXBRzUtEjhOB_VI99fVbHY/preview"
 		]
 	};
 
