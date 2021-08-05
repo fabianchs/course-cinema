@@ -9,79 +9,76 @@ const Home = () => {
 	const [search_status, setSearchStatus] = useState("");
 	const [search_code, setSearchCode] = useState("");
 	const [render_video, setRenderVideo] = useState("");
+	const [download_link, setDownloadLink] = useState("");
 
 	const directions = {
 		"1001": [
 			"1917",
-			"https://drive.google.com/file/d/1CQmyTfBOfPtwgf_0cmVgfgMuHnVMDwMK/preview"
+			"https://drive.google.com/file/d/1CQmyTfBOfPtwgf_0cmVgfgMuHnVMDwMK/"
 		],
 		"1383": [
 			"37 segundos",
-			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/preview"
+			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/"
 		],
 		"3341": [
 			"El insulto",
-			"https://drive.google.com/file/d/1HOzirgFDbU3OphPGyC3yhE1zCHorjqeM/preview"
+			"https://drive.google.com/file/d/1HOzirgFDbU3OphPGyC3yhE1zCHorjqeM/"
 		],
 		"1820": [
 			"El padre",
-			"https://drive.google.com/file/d/1hfzMRzwMFaskRVnd_ku7GTxwBJf_GPPQ/preview"
+			"https://drive.google.com/file/d/1hfzMRzwMFaskRVnd_ku7GTxwBJf_GPPQ/"
 		],
 		"6295": [
 			"El sonido del metal",
-			"https://drive.google.com/file/d/1x3_pvwAEaUNmG8AfVjuYqUJpO9hJexTM/preview"
+			"https://drive.google.com/file/d/1x3_pvwAEaUNmG8AfVjuYqUJpO9hJexTM/"
 		],
 		"0752": [
 			"Habana Blues",
-			"https://drive.google.com/file/d/1_CvT_Wevpp5XinN8Mo39BLcqqp19bNLe/preview"
+			"https://drive.google.com/file/d/1_CvT_Wevpp5XinN8Mo39BLcqqp19bNLe/"
 		],
 		"4984": [
 			"Hidden Figures",
-			"https://drive.google.com/file/d/1tqDI2HGMhrgiNXxkQCyk510X8-VeUow3/preview"
+			"https://drive.google.com/file/d/1tqDI2HGMhrgiNXxkQCyk510X8-VeUow3/"
 		],
 		"2710": [
 			"La La Land",
-			"https://drive.google.com/file/d/1G5pQuM6Obk3kAZegoxd1qIpJcSotNvFs/preview"
+			"https://drive.google.com/file/d/1G5pQuM6Obk3kAZegoxd1qIpJcSotNvFs/"
 		],
 		"3931": [
 			"Mulán",
-			"https://drive.google.com/file/d/1l_BObOM6IRPg39tEyXqx0yc5cPzEBCPc/preview"
+			"https://drive.google.com/file/d/1l_BObOM6IRPg39tEyXqx0yc5cPzEBCPc/"
 		],
 		"2792": [
 			"NomadLand",
-			"https://drive.google.com/file/d/1bGA8-JQEfHy1b3rH07lD7KO3R0b4ccxC/preview"
+			"https://drive.google.com/file/d/1bGA8-JQEfHy1b3rH07lD7KO3R0b4ccxC/"
 		],
 		"6441": [
 			"Otra Ronda",
-			"https://drive.google.com/file/d/1BcAuUKmU01RMWGixyE-cSETQEOY31uuJ/preview"
+			"https://drive.google.com/file/d/1BcAuUKmU01RMWGixyE-cSETQEOY31uuJ/"
 		],
 		"0921": [
 			"Parásitos",
-			"https://drive.google.com/file/d/1oql5ThATONrhfMyEPblfjN9eyEG41oV4/preview"
+			"https://drive.google.com/file/d/1oql5ThATONrhfMyEPblfjN9eyEG41oV4/"
 		],
 		"7930": [
 			"Pequeños Detalles",
-			"https://drive.google.com/file/d/1YDjqvHxEmoBg-QGuB3YDNfi6wsfNLE9C/preview"
+			"https://drive.google.com/file/d/1YDjqvHxEmoBg-QGuB3YDNfi6wsfNLE9C/"
 		],
 		"3840": [
 			"Relatos salvajes",
-			"https://drive.google.com/file/d/1Y3hYrzPcn-HfVtOBulQiLLU60B0Gsmox/preview"
+			"https://drive.google.com/file/d/1Y3hYrzPcn-HfVtOBulQiLLU60B0Gsmox/"
 		],
 		"2229": [
 			"Soul",
-			"https://drive.google.com/file/d/1jl1uHhWS79kvUh12HewBEHqfo-r0hj9h/preview"
+			"https://drive.google.com/file/d/1jl1uHhWS79kvUh12HewBEHqfo-r0hj9h/"
 		],
 		"8830": [
 			"Your Name",
-			"https://drive.google.com/file/d/1cDWTOJ3sTYnXBRzUtEjhOB_VI99fVbHY/preview"
+			"https://drive.google.com/file/d/1cDWTOJ3sTYnXBRzUtEjhOB_VI99fVbHY/"
 		]
 	};
 
 	function doSearch() {
-		let num = 1001;
-		console.log(directions[search_code]);
-		console.log(search_code);
-
 		if (
 			directions[search_code] === undefined ||
 			directions[search_code] === null
@@ -91,6 +88,7 @@ const Home = () => {
 					Wow! Parece que no se encuentra ese código
 				</small>
 			);
+			setDownloadLink("");
 			setRenderVideo("");
 		} else {
 			setSearchStatus(
@@ -100,11 +98,19 @@ const Home = () => {
 			);
 			setRenderVideo(
 				<iframe
-					src={directions[search_code][1]}
+					src={directions[search_code][1] + "preview"}
 					className="embed-responsive-item"
 					allow="autoplay"
 					allowFullScreen
 				/>
+			);
+			setDownloadLink(
+				<a
+					href={directions[search_code][1] + "view"}
+					target="_blank"
+					rel="noreferrer">
+					Descargar {directions[search_code][0]} aquí
+				</a>
 			);
 		}
 	}
@@ -143,6 +149,10 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
+				{download_link}
+			</div>
+
 			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
 				<div className="embed-responsive embed-responsive-16by9 col-11">
 					{render_video}
