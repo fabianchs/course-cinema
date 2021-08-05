@@ -75,6 +75,10 @@ const Home = () => {
 		"8830": [
 			"Your Name",
 			"https://drive.google.com/file/d/1cDWTOJ3sTYnXBRzUtEjhOB_VI99fVbHY/"
+		],
+		"1902": [
+			"Jojo Rabbit",
+			"https://drive.google.com/file/d/1QVoDEaldDP_rMRJBKFhPFt-MepBK3CaE/"
 		]
 	};
 
