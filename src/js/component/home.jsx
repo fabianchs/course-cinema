@@ -20,6 +20,10 @@ const Home = () => {
 			"37 segundos",
 			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/"
 		],
+		"1723": [
+			"La voz de la igualdad",
+			"https://drive.google.com/file/d/1-tIy5_gyVLKoaHhzZGLmZQwSA4RKv1eC/"
+		],
 		"3341": [
 			"El insulto",
 			"https://drive.google.com/file/d/1HOzirgFDbU3OphPGyC3yhE1zCHorjqeM/"
