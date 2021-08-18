@@ -32,6 +32,10 @@ const Home = () => {
 			"El insulto",
 			"https://drive.google.com/file/d/1HOzirgFDbU3OphPGyC3yhE1zCHorjqeM/"
 		],
+		"5523": [
+			"El laberinto del fauno",
+			"https://drive.google.com/file/d/1yM9a_afQb_eoBOP4zQuedSvj2jOr0kn9/"
+		],
 		"1820": [
 			"El padre",
 			"https://drive.google.com/file/d/1hfzMRzwMFaskRVnd_ku7GTxwBJf_GPPQ/"
