@@ -22,7 +22,7 @@ const Home = () => {
 		],
 		"1723": [
 			"La voz de la igualdad",
-			"https://drive.google.com/file/d/1-tIy5_gyVLKoaHhzZGLmZQwSA4RKv1eC/"
+			"https://drive.google.com/file/d/1e3ErpzdCXlPYpY5xwokfUbDQoL54IzHr/"
 		],
 		"3150": [
 			"Mother",
