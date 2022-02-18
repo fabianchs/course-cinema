@@ -20,6 +20,10 @@ const Home = () => {
 			"37 segundos",
 			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/"
 		],
+		"1622": [
+			"Coda Los sonidos del silencio",
+			"https://drive.google.com/file/d/1xnUr4n-4ErzK6DDTHfO5viDuBi8iVzTz/"
+		],
 		"1723": [
 			"La voz de la igualdad",
 			"https://drive.google.com/file/d/1e3ErpzdCXlPYpY5xwokfUbDQoL54IzHr/"
