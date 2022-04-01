@@ -40,6 +40,10 @@ const Home = () => {
 			"Licorice Pizza",
 			"https://drive.google.com/file/d/1Oivs6Mt1nlPYyNsSwDxOibsT2-NGVVme/"
 		],
+		"9227": [
+			"Los ojos de Tammy Faye",
+			"https://drive.google.com/file/d/1GtW1-aXJfdRsR9NBy1nT41YUeZh710vo/"
+		],
 		"3150": [
 			"Mother",
 			"https://drive.google.com/file/d/12pznFnMFWCHdkCJQ6LB3oiJZubRQFgmT/"
