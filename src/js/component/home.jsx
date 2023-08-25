@@ -159,7 +159,7 @@ const Home = () => {
 			setRenderVideo(
 				<iframe
 					src={directions[search_code][1] + "preview"}
-					className="embed-responsive-item"
+					className="embed-responsive embed-responsive-16by9 ratio ratio-16x9"
 					allow="autoplay"
 					allowFullScreen
 				/>
@@ -189,7 +189,7 @@ const Home = () => {
 				<div className="col-xl-3 col-lg-4 col-md-5 col-sm-8 m-2">
 					<div className="row m-0 p-0">
 						<Input
-							className="col-8"
+							className="col-8-auto"
 							type="text"
 							name="text"
 							id="search"
@@ -198,7 +198,7 @@ const Home = () => {
 								setSearchCode(event.target.value);
 							}}></Input>
 						<Button
-							className="col-4"
+							className="col-4-auto"
 							color="secondary"
 							onClick={() => {
 								doSearch();
@@ -209,14 +209,15 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
-			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
+			<div className="row container-fluid m-0 p-0 text-center">
+
+
 				{download_link}
 			</div>
 
 			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
-				<div className="embed-responsive embed-responsive-16by9 col-11">
-					{render_video}
-				</div>
+				<div className="container-fluid"> {render_video}</div>
+
 			</div>
 		</div>
 	);
