@@ -159,7 +159,7 @@ const Home = () => {
 			setRenderVideo(
 				<iframe
 					src={directions[search_code][1] + "preview"}
-					className="embed-responsive embed-responsive-16by9 ratio ratio-16x9"
+					className="h-auto embed-responsive embed-responsive-16by9 ratio ratio-16x9"
 					allow="autoplay"
 					allowFullScreen
 				/>
@@ -210,13 +210,11 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="row container-fluid m-0 p-0 text-center">
-
-
 				{download_link}
 			</div>
 
 			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
-				<div className="container-fluid"> {render_video}</div>
+				<div className="container-fluid "> {render_video}</div>
 
 			</div>
 		</div>
