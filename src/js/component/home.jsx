@@ -162,6 +162,7 @@ const Home = () => {
 					className="h-auto embed-responsive embed-responsive-16by9 ratio ratio-16x9"
 					allow="autoplay"
 					allowFullScreen
+					width="640" height="480"
 				/>
 			);
 			setDownloadLink(
@@ -213,8 +214,8 @@ const Home = () => {
 				{download_link}
 			</div>
 
-			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
-				<div className="container-fluid "> {render_video}</div>
+			<div className="m-0 p-0 d-flex justify-content-center">
+				<div> {render_video}</div>
 
 			</div>
 		</div>
