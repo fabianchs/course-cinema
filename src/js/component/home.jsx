@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Input, Button } from "reactstrap";
+import Iframe from 'react-iframe'
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
@@ -157,13 +158,13 @@ const Home = () => {
 				</small>
 			);
 			setRenderVideo(
-				<iframe
-					src={directions[search_code][1] + "preview"}
-					className="h-auto embed-responsive embed-responsive-16by9 ratio ratio-16x9"
-					allow="autoplay"
-					allowFullScreen
-					width="640" height="480"
-				/>
+				<Iframe url={directions[search_code][1] + "preview"}
+					width="640px"
+					height="320px"
+					id=""
+					className=""
+					display="block"
+					position="relative" />
 			);
 			setDownloadLink(
 				<a
@@ -185,6 +186,7 @@ const Home = () => {
 				<h6 className="text-light col-12 d-flex justify-content-center">
 					Inserte el código de la película:
 				</h6>
+
 			</div>
 			<div className="row container-fluid m-0 p-0 d-flex justify-content-center">
 				<div className="col-xl-3 col-lg-4 col-md-5 col-sm-8 m-2">
