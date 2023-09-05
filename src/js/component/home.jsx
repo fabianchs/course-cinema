@@ -159,10 +159,10 @@ const Home = () => {
 			);
 			setRenderVideo(
 				<Iframe url={directions[search_code][1] + "preview"}
-					width="640px"
-					height="320px"
 					id=""
 					className=""
+					width={window.innerWidth * 0.9}
+					height={window.innerWidth * 0.5}
 					display="block"
 					position="relative" />
 			);
