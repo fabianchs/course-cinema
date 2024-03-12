@@ -21,6 +21,10 @@ const Home = () => {
 			"1917",
 			"https://drive.google.com/file/d/1CQmyTfBOfPtwgf_0cmVgfgMuHnVMDwMK/"
 		],
+		"1236": [
+			"Ellas hablan",
+			"https://drive.google.com/file/d/1bihHArgY06f2Zpx_OzjXYzDSFdc6O_R1/"
+		],
 		"1383": [
 			"37 segundos",
 			"https://drive.google.com/file/d/1gBHOqjsBdzYZLJsPqV9DBWOHrYSCErND/"
