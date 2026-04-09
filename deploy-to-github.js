@@ -37,7 +37,7 @@ compiler.run((err, stats) => {
       return;
     }
     Console.info("Your code compiled successfully, proceding to deploy...");
-    ghpages.publish('public', function(err) {
+    ghpages.publish('dist', function(err) {
         if(err){
             console.error(err);
             Console.error("There was an error publishing your website");

@@ -8,7 +8,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --mode development",
-		"build": "webpack --mode development",
+		"build": "webpack --mode production",
 		"deploy:github": "node deploy-to-github.js"
 	},
 	"author": "Alejandro Sanchez",
