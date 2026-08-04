@@ -217,7 +217,7 @@ const Home = () => {
 							name="text"
 							id="search"
 							placeholder="Inserte el código"
-							onChange={() => {
+						onChange={(event) => {
 								setSearchCode(event.target.value);
 							}}></Input>
 						<Button
