@@ -156,7 +156,7 @@ const Home = () => {
 		"2047": [
 			"El agente secreto",
 			"https://drive.google.com/file/d/1ehmG80GpZyWUXbEERiD-W8ex_1BYwF4v/"
-		],
+		]
 	};
 
 	function doSearch() {
