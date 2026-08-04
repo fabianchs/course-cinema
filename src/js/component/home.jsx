@@ -144,7 +144,19 @@ const Home = () => {
 		"1999": [
 			"Die Welle",
 			"https://drive.google.com/file/d/198YziaqfC6A2yus3TtKniRcSLUh3WGDM/"
-		]
+		],
+		"2010": [
+			"Radical",
+			"https://drive.google.com/file/d/1i4EbQk4bfxk0EPOjRNqFeUGvDJqwtOQ5/"
+		],
+		"2045": [
+			"Anatomía de una caída",
+			"https://drive.google.com/file/d/1fenLTcJOMZXzVNfwqdWYPOvuy-PvWc4g/"
+		],
+		"2047": [
+			"El agente secreto",
+			"https://drive.google.com/file/d/1ehmG80GpZyWUXbEERiD-W8ex_1BYwF4v/"
+		],
 	};
 
 	function doSearch() {
